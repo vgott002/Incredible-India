@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About Us</title>
+    <style>
+        /* Additional styling for the About Us page */
+        .about-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+            text-align: justify;
+        }
+
+        .about-section h2 {
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        .history-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .achievements-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Dynamically include the navbar.html content
+        $(document).ready(function () {
+            $("#navbar-container").load("navbar.html");
+        });
+    </script>
+
+    <header>
+        <h1>Incredible India</h1>
+    </header>
+
+    <!-- Include the common navigation bar -->
+    <!-- Adjust the path based on the location of your files -->
+    <div id="navbar-container">
+        <div include-html="navbar.html"></div>
+    </div>
+
+    <div class="page-content">
+
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to Incredible India, a platform dedicated to showcasing the rich cultural heritage, history, and geographical marvels of India.</p>
+        </div>
+
+        <div class="history-section">
+            <h2>History of India</h2>
+            <p>India has a diverse and ancient history that spans thousands of years. From the great Indus Valley Civilization to the Maurya and Gupta empires, India's history is a tapestry of cultures, traditions, and conquests.</p>
+            <p>Throughout the centuries, India has been a melting pot of civilizations, each leaving its mark on the country's customs, art, and architecture.</p>
+        </div>
+
+        <div class="achievements-section">
+            <h2>Geographical Achievements</h2>
+            <p>India boasts incredible geographical diversity, from the towering Himalayas in the north to the tropical beaches in the south. The country is home to the Ganges, one of the world's most sacred rivers, and the Thar Desert, a vast expanse of arid beauty.</p>
+            <p>India is also known for landmarks like the Taj Mahal, a symbol of eternal love, and the diverse wildlife found in its national parks and sanctuaries.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
